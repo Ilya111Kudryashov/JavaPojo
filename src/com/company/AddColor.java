@@ -1,8 +1,8 @@
 package com.company;
 import java.util.Random;
 public class AddColor extends Decorator {
-    public AddColor(BackLight blackLight) {
-        super(blackLight);
+    public AddColor(BackLight backLight) {
+        super(backLight);
     }
     public AddColor() {
         super();
