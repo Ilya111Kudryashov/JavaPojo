@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public class Decorator {
+/*public class Decorator {
 
     public static String Decorator(String word) {
 
@@ -17,4 +17,18 @@ public class Decorator {
 
     }
 
+}*/
+public class Decorator implements BackLight{
+
+    BackLight backLight;
+    public Decorator(BackLight backLight)
+    {
+        this.backLight= backLight;
+    }
+    public Decorator(){}
+
+    @Override
+    public String MakeBackLight(String word) {
+        return backLight.MakeBackLight(word);
+    }
 }
